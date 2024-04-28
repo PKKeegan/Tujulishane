@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Tujulishane Kenya</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="Tujulishane by Lomogan" name="keywords">
+    <meta content="Tujulishane by Lomogan" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -37,13 +37,51 @@
     transform: scale(1.1); /* Zoom effect on hover */
 
 }
-        .small-image {
-    width: 16.6667vw; /* Set the width to 1/6 of the viewport width */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure the image is displayed as a block element */
-    margin: auto; /* Center the image horizontally */
-    padding: 20px; /* Add padding for spacing */
+   .small-image {
+  width: 300px; /* Set a fixed width for the image */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure the image is displayed as a block element */
+  margin: auto; /* Center the image horizontally */
+  padding: 20px; /* Add padding for spacing */
+}
+
+         .service-item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensure service items take up full height */
   }
+
+  .icon-container {
+    width: 90px;
+    height: 90px; /* Fixed height for the circular icons */
+  }
+
+  .service-item h3 {
+    margin-bottom: 15px;
+  }
+
+  .service-item p {
+    margin-bottom: 0;
+  }
+.services-section {
+    padding-bottom: 80px; /* Adjust as needed */
+  }
+a:hover {
+    transform: scale(0.7);
+}
+    .footer-link {
+    color: white !important;
+    text-decoration-color: #ff3852 !important;
+
+}
+
+.footer-link:hover {
+    text-decoration-color: #ff3852 !important;
+    transform: scale(1);
+}
+
 
 
     </style>
@@ -65,11 +103,16 @@
             <div class="col-md-6 text-center text-lg-end">
     <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
         <div class="me-3 pe-3 border-end py-2">
-            <p class="m-0"><i class="fa fa-envelope-open me-2"></i><a href="mailto:info@tujulishanekenya.org" class="text-white link-zoom">info@tujulishanekenya.org</a></p>
-        </div>
-        <div class="py-2">
-            <p class="m-0"><i class="fa fa-phone-alt me-2"></i><a href="tel:+254733911913" class="text-white link-zoom">+254 733 911 913</a></p>
-        </div>
+    <a href="mailto:info@tujulishanekenya.org" class="text-white link-zoom">
+        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>info@tujulishanekenya.org</p>
+    </a>
+</div>
+<div class="py-2">
+    <a href="tel:+254733911913" class="text-white link-zoom">
+        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+254 733 911 913</p>
+    </a>
+</div>
+
     </div>
 </div>
 
@@ -80,11 +123,11 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
-        <a href="index.html" class="navbar-brand p-0">
+
             <img class="small-image" src="img/img/ujulishaneAsset 4.png" alt="Small Image">
 
 <!--            <h1 class="m-0 text-uppercase text-primary"><i class="far fa-smile text-primary me-2"></i>consult</h1>-->
-        </a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -93,17 +136,6 @@
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-<!--                <div class="nav-item dropdown">-->
-<!--&lt;!&ndash;                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <div class="dropdown-menu m-0">&ndash;&gt;-->
-<!--&lt;!&ndash;                        <a href="blog.html" class="dropdown-item">Blog Grid</a>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <a href="detail.html" class="dropdown-item">Blog Detail</a>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <a href="feature.html" class="dropdown-item">Features</a>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <a href="quote.html" class="dropdown-item">Quote Form</a>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <a href="team.html" class="dropdown-item">The Team</a>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--                </div>-->
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
         </div>
@@ -270,70 +302,71 @@ Tujulishane is built on these values:</p>
         </div>
     </div>
 
-    <!-- Services Start -->
-    <div class="container-fluid pt-6 px-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 mb-0">Tu-Julishane !!</h1>
-            <hr class="w-25 mx-auto bg-primary">
-        </div>
-        <div class="row g-5">
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-user-tie fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Adolescents and Young People Sexual and Reproductive Health</h3>
-                    <p class="mb-0"> Empower young people with comprehensive education, accessible services, and meaningful engagement, ensuring their rights to health, autonomy, and well-being are realized.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-chart-pie fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Sexual and Gender Based Violence</h3>
-                    <p class="mb-0">Combating SGBV with comprehensive legal frameworks, survivor-centered services, community prevention, and efforts to dismantle harmful gender norms, fostering healing and justice for survivors.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-chart-line fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Child and Maternal Health </h3>
-                    <p class="mb-0">Ensure access to quality healthcare for mothers and children worldwide through prenatal care, immunization, nutrition, and community support, fostering preparedness and opportunity for every birth.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-chart-area fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Advocacy and Public Education</h3>
-                    <p class="mb-0">Drive impactful change through advocacy and education, mobilizing support and influencing policy for critical social issues, fostering a more equitable and informed society.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-balance-scale fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Sustainable Livelihoods</h3>
-                    <p class="mb-0">Foster resilience, equity, and environmental stewardship in communities through income diversification, equitable resource access, climate resilience, and gender empowerment, promoting shared prosperity.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-house-damage fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Climate Action</h3>
-                    <p class="mb-0">Inspire emission reduction, climate adaptation, and sustainable development. Engage youth, ensure corporate accountability, foster global cooperation, and advocate for justice-centered solutions. Raise awareness of climate interconnectedness, empowering collective action for a sustainable future.</p>
-                </div>
-            </div>
-        </div>
+<!--    service start-->
+<div class="container-fluid pt-6 px-5 services-section">
+    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+        <h1 class="display-5 mb-0">Tu-Julishane !!</h1>
+        <hr class="w-25 mx-auto bg-primary">
     </div>
-    <!-- Services End -->
+    <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-secondary text-center">
+                <div class="icon-container d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4">
+                    <i class="fa fa-user-tie fa-2x"></i>
+                </div>
+                <h3 class="mb-3">Adolescents and Young People Sexual and Reproductive Health</h3>
+                <p class="mb-0">Empower young people with comprehensive education, accessible services, and meaningful engagement, ensuring their rights to health, autonomy, and well-being are realized.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-secondary text-center">
+                <div class="icon-container d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4">
+                    <i class="fa fa-chart-pie fa-2x"></i>
+                </div>
+                <h3 class="mb-3">Sexual and Gender Based Violence</h3>
+                <p class="mb-0">Combating SGBV with comprehensive legal frameworks, survivor-centered services, community prevention, and efforts to dismantle harmful gender norms, fostering healing and justice for survivors.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-secondary text-center">
+                <div class="icon-container d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4">
+                    <i class="fa fa-chart-line fa-2x"></i>
+                </div>
+                <h3 class="mb-3">Child and Maternal Health</h3>
+                <p class="mb-0">Ensure access to quality healthcare for mothers and children worldwide through prenatal care, immunization, nutrition, and community support, fostering preparedness and opportunity for every birth.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-secondary text-center">
+                <div class="icon-container d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4">
+                    <i class="fa fa-chart-area fa-2x"></i>
+                </div>
+                <h3 class="mb-3">Advocacy and Public Education</h3>
+                <p class="mb-0">Drive impactful change through advocacy and education, mobilizing support and influencing policy for critical social issues, fostering a more equitable and informed society.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-secondary text-center">
+                <div class="icon-container d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4">
+                    <i class="fa fa-balance-scale fa-2x"></i>
+                </div>
+                <h3 class="mb-3">Sustainable Livelihoods</h3>
+                <p class="mb-0">Foster resilience, equity, and environmental stewardship in communities through income diversification, equitable resource access, climate resilience, and gender empowerment, promoting shared prosperity.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-secondary text-center">
+                <div class="icon-container d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4">
+                    <i class="fa fa-house-damage fa-2x"></i>
+                </div>
+                <h3 class="mb-3">Climate Action</h3>
+                <p class="mb-0">Inspire emission reduction, climate adaptation, and sustainable development. Engage youth, ensure corporate accountability, foster global cooperation, and advocate for justice-centered solutions. Raise awareness of climate interconnectedness, empowering collective action for a sustainable future.</p>
+            </div>
+        </div>
+        <!-- Add more service items here -->
+    </div>
+</div>
+<!--    service end-->
 
 
     <!-- Testimonial Start -->
@@ -373,65 +406,61 @@ Tujulishane is built on these values:</p>
     </div>
     <!-- Testimonial End -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-secondary p-5">
-        <div class="row g-5">
-            <div class="col-12 text-center">
-                <h1 class="display-5 mb-4">Partner With Us!!!</h1>
-                <form class="mx-auto" style="max-width: 600px;">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                        <button class="btn btn-dark px-4">Sign Up</button>
-                    </div>
-                </form>
+   <!-- Footer Start -->
+<div class="container-fluid bg-primary text-secondary p-5">
+    <div class="row g-5">
+        <div class="col-12 text-center">
+            <h1 class="display-5 mb-4">Partner With Us!!!</h1>
+            <form class="mx-auto" style="max-width: 600px;">
+                <div class="input-group">
+                    <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                    <button class="btn btn-dark px-4">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-dark text-secondary p-5">
+    <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+            <!-- tujulishane Image -->
+            <!-- <h3 class="text-white mb-4">Quick Links</h3> -->
+            <div class="d-flex flex-column justify-content-start">
+                <img class="small-image" src="img/img/ujulishane white text transparentAsset 7.png" alt="Small Image">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <h3 class="text-white mb-4">Popular Links</h3>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-secondary mb-2 footer-link" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                <a class="text-secondary mb-2 footer-link" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                <a class="text-secondary mb-2 footer-link" href="gallery.html"><i class="bi bi-arrow-right text-primary me-2"></i>Gallery</a>
+                <!-- <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog Post</a> -->
+                <a class="text-secondary footer-link" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <h3 class="text-white mb-4">Get In Touch</h3>
+            <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i><a href="https://www.google.com/maps/place/Kilimani+Rd,+Nairobi/@-1.2987576,36.7770019,16.66z/data=!4m6!3m5!1s0x182f1a75b51449a9:0xa879bd6b4f19a577!8m2!3d-1.2988961!4d36.7794279!16s%2Fg%2F1w2gsf20?entry=ttu" class="text-decoration-none text-primary footer-link" target="_blank">Kilimani Road</a></p>
+            <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i><a href="mailto:info@tujulishanekenya.org" class="text-decoration-none text-primary footer-link">info@tujulishanekenya.org</a></p>
+            <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i><a href="tel:+254733911913" class="text-decoration-none text-primary footer-link">+254 733 911 913</a></p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <h3 class="text-white mb-4">Follow Us</h3>
+            <div class="d-flex">
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-instagram fw-normal"></i></a>
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-dark text-secondary p-5">
-        <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-<!--                tujulishane Image -->
-
-<!--                <h3 class="text-white mb-4">Quick Links</h3>-->
-                <div class="d-flex flex-column justify-content-start">
-                  <img class="small-image" src="img/img/ujulishane white text transparentAsset 7.png" alt="Small Image">
-
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h3 class="text-white mb-4">Popular Links</h3>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-secondary mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                    <a class="text-secondary mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                    <a class="text-secondary mb-2" href="gallery.html"><i class="bi bi-arrow-right text-primary me-2"></i>Gallery</a>
-<!--                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog Post</a>-->
-                    <a class="text-secondary" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h3 class="text-white mb-4">Get In Touch</h3>
-                <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i><a href="https://www.google.com/maps/place/Kilimani+Rd,+Nairobi/@-1.2987576,36.7770019,16.66z/data=!4m6!3m5!1s0x182f1a75b51449a9:0xa879bd6b4f19a577!8m2!3d-1.2988961!4d36.7794279!16s%2Fg%2F1w2gsf20?entry=ttu" class="text-decoration-none text-primary" target="_blank">
-Kilimani Road</a></p>
-                <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i><a href="mailto:info@tujulishanekenya.org" class="text-decoration-none text-primary">info@tujulishanekenya.org</a></p>
-                <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i><a href="tel:+254733911913" class="text-decoration-none text-primary">+254 733 911 913</a></p>
-
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h3 class="text-white mb-4">Follow Us</h3>
-                <div class="d-flex">
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-instagram fw-normal"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid bg-dark text-secondary text-center border-top py-4 px-5" style="border-color: rgba(256, 256, 256, .1) !important;">
-        <p class="m-0">&copy; <a class="text-secondary border-bottom" href="#">Tujulishane</a>. All Rights Reserved.</p>
-<!--            Designed by <a class="text-secondary border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>-->
-    </div>
-    <!-- Footer End -->
+</div>
+<div class="container-fluid bg-dark text-secondary text-center border-top py-4 px-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+    <p class="m-0">&copy; <a class="text-secondary border-bottom" href="#">Tujulishane</a>. All Rights Reserved.</p>
+    <!-- Designed by <a class="text-secondary border-bottom" href="https://htmlcodex.com">HTML Codex</a> -->
+</div>
+<!-- Footer End -->
 
 
     <!-- Back to Top -->
