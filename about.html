@@ -37,7 +37,25 @@
     transform: scale(1.1); /* Zoom effect on hover */
 
 }
-        .service-item {
+
+         .small-image {
+  width: 250px; /* Set a fixed width for the image */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure the image is displayed as a block element */
+  margin: auto; /* Center the image horizontally */
+  padding: 15px; /* Add padding for spacing */
+
+  /* Adjust padding-left for smaller screens */
+}
+
+@media (max-width: 576px) {
+  .small-image {
+    padding-left: 8px; /* Adjust padding-left for smaller screens */
+    width: 90px; 
+  }
+}
+         
+         .service-item {
     padding: 20px;
     display: flex;
     flex-direction: column;
