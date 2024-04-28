@@ -37,13 +37,32 @@
     transform: scale(1.1); /* Zoom effect on hover */
 
 }
-        .small-image {
-    width: 16.6667vw; /* Set the width to 1/6 of the viewport width */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure the image is displayed as a block element */
-    margin: auto; /* Center the image horizontally */
-    padding: 20px; /* Add padding for spacing */
+        .service-item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensure service items take up full height */
   }
+
+  .icon-container {
+    width: 90px;
+    height: 90px; /* Fixed height for the circular icons */
+  }
+
+  .service-item h3 {
+    margin-bottom: 15px;
+  }
+
+  .service-item p {
+    margin-bottom: 0;
+  }
+.services-section {
+    padding-bottom: 80px; /* Adjust as needed */
+  }
+a:hover {
+    transform: scale(0.7);
+}
 
 
     </style>
@@ -231,70 +250,71 @@ Tujulishane is built on these values:</p>
         </div>
     </div>
 
-    <!-- Services Start -->
-    <div class="container-fluid pt-6 px-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 mb-0">Tu-Julishane !!</h1>
-            <hr class="w-25 mx-auto bg-primary">
-        </div>
-        <div class="row g-5">
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-user-tie fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Adolescents and Young People Sexual and Reproductive Health</h3>
-                    <p class="mb-0"> Empower young people with comprehensive education, accessible services, and meaningful engagement, ensuring their rights to health, autonomy, and well-being are realized.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-chart-pie fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Sexual and Gender Based Violence</h3>
-                    <p class="mb-0">Combating SGBV with comprehensive legal frameworks, survivor-centered services, community prevention, and efforts to dismantle harmful gender norms, fostering healing and justice for survivors.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-chart-line fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Child and Maternal Health </h3>
-                    <p class="mb-0">Ensure access to quality healthcare for mothers and children worldwide through prenatal care, immunization, nutrition, and community support, fostering preparedness and opportunity for every birth.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-chart-area fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Advocacy and Public Education</h3>
-                    <p class="mb-0">Drive impactful change through advocacy and education, mobilizing support and influencing policy for critical social issues, fostering a more equitable and informed society.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-balance-scale fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Sustainable Livelihoods</h3>
-                    <p class="mb-0">Foster resilience, equity, and environmental stewardship in communities through income diversification, equitable resource access, climate resilience, and gender empowerment, promoting shared prosperity.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-house-damage fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Climate Action</h3>
-                    <p class="mb-0">Inspire emission reduction, climate adaptation, and sustainable development. Engage youth, ensure corporate accountability, foster global cooperation, and advocate for justice-centered solutions. Raise awareness of climate interconnectedness, empowering collective action for a sustainable future.</p>
-                </div>
-            </div>
-        </div>
+   <!--    service start-->
+<div class="container-fluid pt-6 px-5 services-section">
+    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+        <h1 class="display-5 mb-0">Tu-Julishane !!</h1>
+        <hr class="w-25 mx-auto bg-primary">
     </div>
-    <!-- Services End -->
+    <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-secondary text-center">
+                <div class="icon-container d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4">
+                    <i class="fa fa-user-tie fa-2x"></i>
+                </div>
+                <h3 class="mb-3">Adolescents and Young People Sexual and Reproductive Health</h3>
+                <p class="mb-0">Empower young people with comprehensive education, accessible services, and meaningful engagement, ensuring their rights to health, autonomy, and well-being are realized.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-secondary text-center">
+                <div class="icon-container d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4">
+                    <i class="fa fa-chart-pie fa-2x"></i>
+                </div>
+                <h3 class="mb-3">Sexual and Gender Based Violence</h3>
+                <p class="mb-0">Combating SGBV with comprehensive legal frameworks, survivor-centered services, community prevention, and efforts to dismantle harmful gender norms, fostering healing and justice for survivors.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-secondary text-center">
+                <div class="icon-container d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4">
+                    <i class="fa fa-chart-line fa-2x"></i>
+                </div>
+                <h3 class="mb-3">Child and Maternal Health</h3>
+                <p class="mb-0">Ensure access to quality healthcare for mothers and children worldwide through prenatal care, immunization, nutrition, and community support, fostering preparedness and opportunity for every birth.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-secondary text-center">
+                <div class="icon-container d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4">
+                    <i class="fa fa-chart-area fa-2x"></i>
+                </div>
+                <h3 class="mb-3">Advocacy and Public Education</h3>
+                <p class="mb-0">Drive impactful change through advocacy and education, mobilizing support and influencing policy for critical social issues, fostering a more equitable and informed society.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-secondary text-center">
+                <div class="icon-container d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4">
+                    <i class="fa fa-balance-scale fa-2x"></i>
+                </div>
+                <h3 class="mb-3">Sustainable Livelihoods</h3>
+                <p class="mb-0">Foster resilience, equity, and environmental stewardship in communities through income diversification, equitable resource access, climate resilience, and gender empowerment, promoting shared prosperity.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-secondary text-center">
+                <div class="icon-container d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4">
+                    <i class="fa fa-house-damage fa-2x"></i>
+                </div>
+                <h3 class="mb-3">Climate Action</h3>
+                <p class="mb-0">Inspire emission reduction, climate adaptation, and sustainable development. Engage youth, ensure corporate accountability, foster global cooperation, and advocate for justice-centered solutions. Raise awareness of climate interconnectedness, empowering collective action for a sustainable future.</p>
+            </div>
+        </div>
+        <!-- Add more service items here -->
+    </div>
+</div>
+<!--    service end-->
 
 
     <!-- Testimonial Start -->
